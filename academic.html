@@ -1,0 +1,226 @@
+<!doctype html>
+<head>
+<title> Haritha Rajkumar Profile </title>
+<script type="text/javascript" src="jquery.min.js">
+
+</script>
+<style>
+<link href="font-awesome.min.css" rel="stylesheet"/>
+
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* css for links inside nav bar  */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* color for hovering of links */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* the current page is highlighted */
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* link is hidden for other screens */
+.topnav .icon {
+    display: none;
+}
+/* For the profile image */
+.ex1 {
+    padding-top: 50px;
+}
+
+/* padding for text */
+.ex2{
+    padding-top: 25px;
+}
+
+* {
+    box-sizing: border-box;
+}
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+
+#panel1, #flip1 {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel1 {
+    padding: 50px;
+    display: none;
+}
+
+#panel2, #flip2 {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panel2 {
+    padding: 50px;
+    display: none;
+}
+
+</style>
+</head>
+<body>
+
+<div class = "topnav" id = "nav1">
+<a href = "haritha-profile.html" >Home</a>
+<a href = "academic.html" class = "active"> Educational Qualification </a>
+<a href = "#skills"> Primary Skills </a>
+<a href = "#hobbies"> Hobbies </a>
+<a href="javascript:void(0);" onclick="myFunction()">
+    <i class="fa fa-bars"></i></a> 
+</div>
+<p></p>
+<div id="flip">Click here to view the Graduation details</div>
+<div id="panel">
+<table width="1000">
+<tr>	
+</tr>
+
+<tr>
+
+<th>College:</th>
+<th>Course:</th>
+<th>Branch:</th>
+<th>Percentage(%)</th>
+</tr>
+
+<tr>
+<td>SRM University</td>
+<td>Bachelor of Technology</td>
+<td>Computer Science and Engineering</td>
+<td>96.2</td>
+</tr>
+
+
+
+</table>
+</div>
+<p></p>
+
+<div id="flip1">Click here to view HSC details</div>
+<div id="panel1">
+<table width="1000">
+<tr>
+	
+</tr>
+
+<tr>
+
+<th>School:</th>
+<th>Board:</th>
+<th>Subject:</th>
+<th>Percentage(%)</th>
+</tr>
+
+<tr>
+<td>Sri Ahobila Math</td>
+<td>TamilNadu State Board</td>
+<td>Science Group with Computer Science</td>
+<td>95.6</td>
+</tr>
+
+
+
+</table>
+</div>
+
+<p></p>
+
+<div id="flip2">Click here to view SSC details</div>
+<div id="panel2">
+<table width="1000">
+<tr>
+	
+</tr>
+
+<tr>
+<th>School:</th>
+<th>Board:</th>
+<th>Subject:</th>
+<th>Percentage(%)</th>
+</tr>
+
+<tr>
+<td>JG Hindu Vidyalaya</td>
+<td>TamilNadu Matriculation Board</td>
+<td>Science Group </td>
+<td>91.8</td>
+</tr>
+
+
+
+</table>
+</div>
+
+
+
+<script type="text/javascript">
+
+function myFunction() {
+    var x = document.getElementById("nav1");
+    x.className == "topnav"   
+}
+
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+
+$(document).ready(function(){
+    $("#flip1").click(function(){
+        $("#panel1").slideToggle("slow");
+    });
+});
+
+$(document).ready(function(){
+    $("#flip2").click(function(){
+        $("#panel2").slideToggle("slow");
+    });
+});
+</script>
+
+
+
+</body>
+</html>
